@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title  %} Welcome To | {{ parent() }} {% endblock title %}
+{% block body %}
+<div class="container header-panel">
+    <div class="header-panel-content">
+        <img class="header-panel-img profile-img rounded-circle animated zoomin" src="assets/img/home/profile-img.jpg" alt="profile-img">
+        <div class="name-page">
+            <h4>Accueil</h4></div>
+    </div>
+    <div class="header-title-name">
+        <h5>Cyrille MBIA</h5>
+    </div>
+</div>
+<!-- MOBILE NAVIGATION -->
+<div class="float-btn top">
+    <a class="main-btn">
+        <div class="mobile-icon">
+            <i class="icon ion-md-add"></i>
+        </div>
+    </a>
+    <ul>
+        <li><a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="home"><i class = "icon ion-md-home"></i></a></li>
+        <li><a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="about"><i class = "icon ion-md-person"></i></a></li>
+        <li><a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="resume"><i class = "icon ion-md-school"></i></a></li>
+        <li><a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="portfolio"><i class = "icon ion-md-images"></i></a></li>
+        <li><a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="contacts"><i class = "icon ion-md-paper-plane"></i></a></li>
+    </ul>
+</div>
+<!-- NAVIGATION  -->
+<nav class="nav-wide">
+    <a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="home"><i class = "icon ion-md-home"></i></a>
+    <a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="about"><i class = "icon ion-md-person"></i></a>
+    <a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="resume"><i class = "icon ion-md-school"></i></a>
+    <a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="portfolio"><i class = "icon ion-md-images"></i></a>
+    <a href="#" class="content-link icon-wrap" data-toggle="popover" data-content="contacts"><i class = "icon ion-md-paper-plane"></i></a>
+</nav>
+<!-- /.nav-wide -->
+<div class="header">
+    <div id="scene" class="parallax-viewport">
+        <div data-parallaxify-range-x="30" data-parallaxify-range-y="50" class="img-bg img1"></div>
+        <div data-parallaxify-range-x="75" data-parallaxify-range-y="50" class="img-bg img2"></div>
+        <div data-parallaxify-range-x="150" data-parallaxify-range-y="50" class="img-bg img3"></div>
+    </div>
+</div>
+<!-- /.header -->
+<div id="pjax-container">
+    <div class="header-content p_scroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 offset-md-1">
+                    <img class="profile-img rounded-circle img-fluid" src="assets/img/home/profile-img.jpg" alt="profile-img">
+                </div>
+                <div class="col-md-7 home-header-text">
+                    <h1>Cyrille MBIA</h1>
+                    <h4>I'm Web, Android Developer & Designer</h4>
+                    <p>Hello everyone and welcome to my portfolio!
+
+                        My name is Cyrille MBIA, I'm 14 years old and I live in Yaoundé, Cameroon. Having obtained my BAC D, I turned to a Computer Engineering degree at the Center of Technological Excellence Paul Biya located in NKOLANGA - Yaoundé, in order to acquire computer skills and make my passion my job.
+
+                        I therefore plan to pursue my studies so that I have a better chance of doing the job I want.
+
+                        You will find here, in my portfolio on the one hand the presentation of my host company and my training center, and finally the training that I perform and its courses.
+
+                        I wish you a good visit!</p>
+                    <a class="button content-link" href="#">View my portfolio</a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.header-content -->
+</div>
+<!-- /.pjax-container -->
+<!-- FOOTER -->
+<footer>
+    <div class="container-fluid">
+        <div class="wrap-footer-content">
+            <span>&copy; WeMoney Technology 2018 - {{ 'now' |date('Y') }} All Rights Reserved.</span>
+            <div class="social-link-footer">
+                <a href="https://twitter.com/mbia_cyrille"><i class="icon ion-logo-twitter"></i></a>
+                <a href="https://www.facebook.com/cyrille.mbia"><i class="icon ion-logo-facebook"></i></a>
+                <a href="https://www.instagram.com/mbia1378/"><i class="icon ion-logo-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock body %}
